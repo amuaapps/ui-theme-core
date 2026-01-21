@@ -19,6 +19,7 @@
   "scripts": {
     "build": "node scripts/build.js",
     "clean": "rm -rf dist",
+    "check:token-contract": "node scripts/check-token-contract.mjs",
     "prepublishOnly": "npm run clean && npm run build"
   },
   "publishConfig": {
