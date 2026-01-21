@@ -1,0 +1,42 @@
+{
+  "name": "@amuaapps/ui-theme-core",
+  "version": "0.1.0",
+  "description": "Amua Apps UI Theme Core - Foundational design tokens and theming",
+  "type": "module",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "files": [
+    "dist",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    "./styles": "./dist/styles.js",
+    "./theme.css": "./dist/theme.css"
+  },
+  "scripts": {
+    "build": "node scripts/build.js",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amuaapps/ui-theme-core.git"
+  },
+  "keywords": [
+    "design-tokens",
+    "theme",
+    "css",
+    "amua"
+  ],
+  "author": "Amua Apps",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.20.0"
+  }
+}
