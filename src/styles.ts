@@ -26,3 +26,8 @@ export function injectStyles(): void {
  * Default export for convenience
  */
 export default injectStyles;
+
+/**
+ * Auto-inject styles on module import
+ */
+injectStyles();

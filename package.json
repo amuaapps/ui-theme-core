@@ -4,7 +4,8 @@
   "description": "Amua Apps UI Theme Core - Foundational design tokens and theming",
   "type": "module",
   "sideEffects": [
-    "**/*.css"
+    "**/*.css",
+    "dist/styles.js"
   ],
   "files": [
     "dist",
@@ -13,7 +14,10 @@
     "LICENSE"
   ],
   "exports": {
-    "./styles": "./dist/styles.js",
+    "./styles": {
+      "types": "./dist/styles.d.ts",
+      "default": "./dist/styles.js"
+    },
     "./theme.css": "./dist/theme.css"
   },
   "scripts": {

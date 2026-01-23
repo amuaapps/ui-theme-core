@@ -21,8 +21,9 @@ async function buildPackage() {
   });
 
   await copyFile("src/theme.css", "dist/theme.css");
+  await copyFile("src/styles.d.ts", "dist/styles.d.ts");
 
-  console.log("✅ Build complete: dist/styles.js and dist/theme.css");
+  console.log("✅ Build complete: dist/styles.js, dist/styles.d.ts, and dist/theme.css");
 }
 
 buildPackage().catch((err) => {
