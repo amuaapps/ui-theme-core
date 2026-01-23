@@ -1,6 +1,6 @@
 {
   "name": "@amuaapps/ui-theme-core",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Amua Apps UI Theme Core - Foundational design tokens and theming",
   "type": "module",
   "sideEffects": [

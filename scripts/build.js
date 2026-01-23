@@ -14,7 +14,7 @@ async function buildPackage() {
     format: "esm",
     outfile: "dist/styles.js",
     loader: {
-      ".css": "css",
+      ".css": "text",
     },
     minify: false,
     sourcemap: false,
